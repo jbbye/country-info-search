@@ -31,18 +31,5 @@ function weatherInformation(data){
     var url = `http://api.weatherapi.com/v1/current.json?key=09390724b17442729dc35320240312&q=${data}&aqi=no`;
     fetch(url).then(res => res.json()).then(data => displayWeather(data));
 }
-
-function displayWeather(data){
-    var weather = data;
-    var oldContent = document.getElementById("displayWeather");
-    var newDiv = document.createElement("div");
-    oldContent.innerHTML = `<div class = "country">Local Time : ${weather.location.localtime} <br> 
-    Weather Condition : ${weather.current.condition.text}
-    <img src = "${weather.current.condition.icon}">
-    </div>`;
-    oldContent.appendChild(newDiv);
-
-    
-}
-    
+ 
 
