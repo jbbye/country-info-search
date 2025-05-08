@@ -19,7 +19,6 @@ function display(data){
             <p>Region: ${data[i].region}</p>
             <p>Subregion: ${data[i].subregion}</p>
             <p>Area: ${data[i].area}</p>
-            <button class="moreButton" onclick="weatherInformation('${data[i].name.common}')"> Weather Information </button>
         </div>`;
         oldContent.appendChild(newDiv);
     }
@@ -31,5 +30,6 @@ function weatherInformation(data){
     var url = `http://api.weatherapi.com/v1/current.json?key=09390724b17442729dc35320240312&q=${data}&aqi=no`;
     fetch(url).then(res => res.json()).then(data => displayWeather(data));
 }
- 
+
+    
 
