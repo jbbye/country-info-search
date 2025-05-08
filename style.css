@@ -21,7 +21,7 @@ header {
 
 /* Navbar Styles */
 ul {
-    background-color: #ffffff; /* White background for navbar */
+    background-color: #006923; /* White background for navbar */
     list-style: none;
     margin: 0;
     padding: 12px 0;
@@ -113,8 +113,8 @@ ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #ffffff;
-    color: #4a4a4a;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
