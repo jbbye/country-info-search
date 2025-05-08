@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(203, 204, 154);
+    margin: auto;
+    padding: auto;
+}
+/* navbar starts */
+ul{
+    background-color: rgb(84, 91, 95);
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+}
+
+li{
+    border: 2px;
+    font-size: 30px ;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+li a{
+    justify-content: center;
+}
+
+li :hover{
+    background-color: rgb(110, 70, 25);
+}
+/* navbar ends */
+
+/* header and footer starts*/
+
+header{
+    text-align: center;
+    font-family: 'Gill Sans','sans-serif';
+}
+
+footer{
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+    background-color: #333;
+    color:white;
+    padding:20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* header and footer ends*/
+
+/* search box starts */
+
+.searchBox{
+    text-align: center;
+}
+
+#search{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+
+}
+
+.searchButton{
+
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(119, 86, 98);
+
+}
+.country{
+    text-align: center;
+    background-color: rgb(151, 196, 164);
+    padding: 20px;
+}
+.moreButton{
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(52, 77, 52);
+    color: aliceblue;
+}
