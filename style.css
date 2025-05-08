@@ -1,98 +1,132 @@
-body{
-    background-color: rgb(203, 204, 154);
-    margin: auto;
-    padding: auto;
+/* General Body Styles */
+body {
+    background-color: #f9f9f9; /* Light background */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark text for contrast */
 }
-/* navbar starts */
-ul{
-    background-color: rgb(84, 91, 95);
+
+/* Header Styles */
+header {
+    text-align: center;
+    font-size: 2.5rem; /* Increased size for better visibility */
+    font-weight: 600;
+    padding: 40px 0;
+    color: #ffffff;
+    background-color: #00796b; /* Fresh, calming teal color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    letter-spacing: 1px; /* Slight letter spacing for modern feel */
+}
+
+/* Navbar Styles */
+ul {
+    background-color: #ffffff; /* White background for navbar */
     list-style: none;
     margin: 0;
-    padding: 3px;
-}
-
-ul{
-    display:flex;
+    padding: 12px 0;
+    display: flex;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-li{
-    border: 2px;
-    font-size: 30px ;
-    margin-right: 10px;
+ul li {
+    margin: 0 20px;
+    font-size: 1rem;
 }
 
-a{
+ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-left: 50px;
+    color: #333; /* Dark text */
+    transition: color 0.3s ease-in-out;
 }
 
-li a{
-    justify-content: center;
+ul li a:hover {
+    color: #00796b; /* Accent color on hover (same as header) */
 }
 
-li :hover{
-    background-color: rgb(110, 70, 25);
-}
-/* navbar ends */
-
-/* header and footer starts*/
-
-header{
+/* Search Box Styles */
+.searchBox {
     text-align: center;
-    font-family: 'Gill Sans','sans-serif';
+    margin: 50px 0;
 }
 
-footer{
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
-    background-color: #333;
-    color:white;
-    padding:20px 0;
-    text-align: center;
-    position: relative;
-}
-
-/* header and footer ends*/
-
-/* search box starts */
-
-.searchBox{
-    text-align: center;
-}
-
-#search{
-
-    margin-top: 20px;
-    margin-bottom: 20px;
+#search {
+    padding: 12px;
     width: 300px;
-    height: 30px;
-
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+    outline: none;
+    transition: border 0.3s ease;
 }
 
-.searchButton{
+#search:focus {
+    border: 1px solid #00796b; /* Accent color on focus */
+}
 
+.searchButton {
+    padding: 12px 20px;
+    background-color: #00796b;
     border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100px;
-    height: 30px;
-    background-color: rgb(119, 86, 98);
-
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
 }
-.country{
-    text-align: center;
-    background-color: rgb(151, 196, 164);
+
+.searchButton:hover {
+    background-color: #004d40; /* Slightly darker shade on hover */
+}
+
+/* Country Display Section */
+.country {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
     padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-.moreButton{
+
+.moreButton {
+    padding: 12px 20px;
+    background-color: #00796b;
     border: none;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    width: 100px;
-    height: 35px;
-    background-color: rgb(52, 77, 52);
-    color: aliceblue;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.moreButton:hover {
+    background-color: #004d40; /* Slightly darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #00796b; /* Same accent color for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #004d40; /* Slightly darker shade for footer link hover */
 }
